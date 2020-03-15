@@ -1,7 +1,23 @@
 <?php $page = "Home";include('assets/elements/head.php'); ?>
 <div class="maincontent">
 	<div class="logo">
-		<img>
+		<table>
+			<tr>
+				<td style="width:25%">
+					<p class="location">
+						Each Location is Open<br>
+						7:30am - 5:00pm M-F<br>
+						8:00am - 12:00pm Sat
+					</p>
+				</td>
+				<td style="width:50%">
+					<img>
+				</td>
+				<td style="width:25%" class="location">
+					<?php echo date('l, F d, Y'); ?><br>Janell Ecommerce
+				</td>
+			</tr>
+		</table>
 	</div>
 </div>
 
@@ -21,7 +37,7 @@
 		<p>2930 Crescent Sprgs 41018</p>
 		<a href="tel:18593419111">859-341-9111</a>
 	</div>
-	<div class="CBlogo"></div>
+	<div onclick="document.location.href='https://janell.com';" class="CBlogo"></div>
 	<div class="contact">
 		<b>Dayton, Oh</b>
 		<p>801 E 1st St 45402</p>
@@ -79,17 +95,14 @@
 </div>
 
 <div class="appGuide maincontent">
-	<div class="banner"><h2>We recommend visiting this page <a href="table.php">full size</a></h2></div>
+	<div class="banner"><h1>APPLICATION GUIDE</h1></div>
 	<iframe class="small" src="assets/elements/table.php"></iframe>
 </div>
 
 <div class="PLandSupp">
 	<div class="productList">
-		<img src="assets/RWB-ProductList-TwoColumn.png">
+		<img src="assets/RWB-ProductList-PostFix.JPG">
 	</div>
-	<div class="supporters">
-		<img src="assets/logos/astm.png">
-		<img src="assets/logos/usdot.jpg">
 	</div>
 </div>
 

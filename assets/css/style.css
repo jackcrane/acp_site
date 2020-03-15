@@ -1,24 +1,73 @@
+:root {
+	--acp-blue:#0c6eaf;
+}
+
 body {
 	font-family: sans-serif;
 }
 
 .maincontent {
-		/*padding: 15%;*/
-		margin:2%;
-		border: 6px solid #0c6eaf;
-		border-radius:10px;
+	/*padding: 15%;*/
+	margin:2%;
 }
 
 div .logo {
-	padding:15%;
-	padding-top:5%;
+
+}
+
+td {
+	width:25%;
+}
+
+td .large {
+	width:50%;
+}
+
+.location {
+	color:#777;
+}
+
+.location:nth-of-type(3) {
+	text-align:right;
+}
+
+.logo table, .logo tr {
+	width:100%;
 }
 
 .logo img {
 	content:url("../logos/acp_master_color_blue.jpg");
-	width:75%;
-	padding-left:12.5%;
-	padding-right:12.5%;
+	width:100%;
+}
+
+.logo input {
+	/*width:98%;  I know this is horrible but it looks ok so here we are yay. */
+	font-size:18px;
+	line-height:24px;
+	border:6px solid red;
+	outline:none;
+}
+
+/*
+  98
+ -30
+ ----
+ 68
+*/
+
+.logo input[type=text] {
+	border-right:none;
+	border-radius:15px 0px 0px 15px;
+	width:67%;
+	padding-left:1%;
+}
+
+.logo input[type=submit] {
+	border-left:none;
+	border-radius:0px 15px 15px 0px;
+	width:30%;
+    background-color: var(--acp-blue);
+    color: white;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -29,13 +78,13 @@ div .logo {
 	.PLandSupp {
 	    width: 96%;
 	    float: none;
-	    margin: 2%;
+	    margin: 1% 2%;
 	}
 }
 
 @media only screen and (min-width: 1010px) {
 	.contact {
-		min-height: 120px;
+		min-height: 77px;
 	}
 }
 
@@ -141,10 +190,10 @@ div .logo {
 }
 
 .appGuide {
-	/*width:40%;*/
-	/*height:80vh;*/
+	border:6px solid var(--acp-blue);
 	overflow: hidden;
 	padding-top:none;
+	border-radius:10px;
 	/*float:right;*/
 }
 
@@ -174,17 +223,23 @@ iframe {
 .banner {
 	text-align:center;
 	width:100%;
-	background-color:skyblue;
+	color:red;
+}
+
+.banner h1 {
+	font-size: 3rem;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 .PLandSupp {
-	margin:2%;
+	margin:1% 2%;
 	/*margin-left:3%;*/
 }
 
 .PLandSupp img {
 	width:94%;
-	margin:2%;
+	/*margin:2%;*/
 }
 
 .announcement {
@@ -192,14 +247,19 @@ iframe {
 }
 
 .contact {
-	margin:auto .5%;
-	padding:.5%;
+	margin-top:60px;
+	padding:1%;
 	color:white;
-	background-color:#0c6eaf;
-	border-radius:5px;
+	background-color:var(--acp-blue);
+	border-radius:0px;
 	text-align:center;
 	height:110%;
 	padding:auto 0px;
+}
+
+.contact p {
+	margin-block-end: 0;
+    margin-block-start: 0;
 }
 
 .contact a {
@@ -207,18 +267,18 @@ iframe {
 }
 
 .CBlogo {
-	width:20%;
+	cursor:pointer;
+	width:16%;
 	content:url("../logos/janell/concreteboy.PNG");
 }
 
 .supporters {
-	border: 6px solid #0c6eaf;
-	border-radius:10px;
-	margin-top:4%;
+	margin-top:0%;
 }
 
 .supporters img {
 	width:15%;
+	padding:5%;
 }
 
 .supporters img:nth-of-type(2) {
@@ -226,6 +286,5 @@ iframe {
 }
 
 .productList {
-	border: 6px solid #0c6eaf;
-	border-radius:10px;
+
 }
